@@ -31,37 +31,40 @@
         </div>
       </section>
 
-       <section class="mt-4 card text-center bg-white rounded hover:shadow-lg">
-        <a href="#" class="p-6 inline-block">
-          <h2 class="text-sm text-gray-500">Master</h2>
-          <img class="p-12 pb-8" src="./assets/img/ill-empty_state-collab.svg" alt="Cat and human playing on the synth">
-          <p class="text-lg font-semibold">Share tracks, get feedback, make better music.</p>
-        </a>
-      </section>
-
-      <section class="mt-4 card text-center bg-white rounded hover:shadow-lg">
-        <a href="#" class="p-6 inline-block">
-          <h2 class="text-sm text-gray-500">Collaborate</h2>
-          <img class="p-12 pb-8" src="./assets/img/ill-empty_state-collab.svg" alt="Cat and human playing on the synth">
-          <p class="text-lg font-semibold">Share tracks, get feedback, make better music.</p>
-        </a>
-      </section>
-
-       <section class="mt-4 card text-center bg-white rounded hover:shadow-lg">
-        <a href="#" class="p-6 inline-block">
-          <h2 class="text-sm text-gray-500">Distriute</h2>
-          <img class="p-12 pb-8" src="./assets/img/ill-empty_state-collab.svg" alt="Cat and human playing on the synth">
-          <p class="text-lg font-semibold">Share tracks, get feedback, make better music.</p>
-        </a>
-      </section>
-
-       <section class="mt-4 card text-center bg-white rounded hover:shadow-lg">
-        <a href="#" class="p-6 inline-block">
-          <h2 class="text-sm text-gray-500">Promote</h2>
-          <img class="p-12 pb-8" src="./assets/img/ill-empty_state-collab.svg" alt="Cat and human playing on the synth">
-          <p class="text-lg font-semibold">Share tracks, get feedback, make better music.</p>
-        </a>
-      </section>
+      <div class="block sm:flex sm:flex-wrap sm:-mx-2">
+      
+          <section class="mt-4 card text-center sm:w-1/2 sm:px-2">
+            <a href="#" class="p-6 bg-white inline-block rounded hover:shadow-lg">
+              <h2 class="text-sm text-gray-500">Master</h2>
+              <img class="p-12 pb-8" src="./assets/img/ill-empty_state-collab.svg" alt="Cat and human playing on the synth">
+              <p class="text-lg font-semibold">Share tracks, get feedback, make better music.</p>
+            </a>
+          </section>
+  
+          <section class="mt-4 card text-center sm:w-1/2 sm:px-2">
+            <a href="#" class="p-6 bg-white inline-block rounded hover:shadow-lg">
+              <h2 class="text-sm text-gray-500">Collaborate</h2>
+              <img class="p-12 pb-8" src="./assets/img/ill-empty_state-collab.svg" alt="Cat and human playing on the synth">
+              <p class="text-lg font-semibold">Share tracks, get feedback, make better music.</p>
+            </a>
+          </section>
+  
+        <section class="mt-4 card text-center sm:w-1/2 sm:px-2">
+          <a href="#" class="p-6 bg-white inline-block rounded hover:shadow-lg">
+            <h2 class="text-sm text-gray-500">Distriute</h2>
+            <img class="p-12 pb-8" src="./assets/img/ill-empty_state-collab.svg" alt="Cat and human playing on the synth">
+            <p class="text-lg font-semibold">Share tracks, get feedback, make better music.</p>
+          </a>
+        </section>
+  
+        <section class="mt-4 card text-center sm:w-1/2 sm:px-2">
+          <a href="#" class="p-6 bg-white inline-block rounded hover:shadow-lg">
+            <h2 class="text-sm text-gray-500">Promote</h2>
+            <img class="p-12 pb-8" src="./assets/img/ill-empty_state-collab.svg" alt="Cat and human playing on the synth">
+            <p class="text-lg font-semibold">Share tracks, get feedback, make better music.</p>
+          </a>
+        </section>
+      </div>
 
       <section class="mt-4 bg-white rounded">
         <div class="p-6 inline-block w-full">
@@ -161,7 +164,7 @@
         </a>
       </section>
 
-       <section class="mt-4 card bg-gray-200 rounded hover:shadow-lg">
+       <section class="mt-4 card bg bg-gray-200 rounded hover:shadow-lg">
         <a href="#" class="p-6 inline-block">
           <h2 class="text-sm text-gray-500">LANDR Samples</h2>
           <p class="mt-4 text-lg font-semibold">Stay inspired with free curated sample packs from top artists.</p>
@@ -184,10 +187,13 @@
       </section>
 
     </main>
-    <footer class="px-4 py-2 border-t ">
-      <a class="text-sm underline hover:no-underline" href="#">Privacy Policy</a>
-      <span class="mx-1">-</span>
-      <a class="text-sm underline hover:no-underline" href="#">Terms of Service</a>
+    <footer class="px-4 py-2 border-t sm:flex sm:justify-between">
+      <div>
+        <a class="text-sm underline hover:no-underline" href="#">Privacy Policy</a>
+        <span class="mx-1">-</span>
+        <a class="text-sm underline hover:no-underline" href="#">Terms of Service</a>
+      </div>
+      
       <div class="text-sm flex items-center">
         <span class="text-xs">
           &copy;
