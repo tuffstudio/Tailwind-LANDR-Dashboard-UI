@@ -164,11 +164,14 @@
         </a>
       </section>
 
-       <section class="mt-4 card bg bg-gray-200 rounded hover:shadow-lg">
-        <a href="#" class="p-6 inline-block">
-          <h2 class="text-sm text-gray-500">LANDR Samples</h2>
-          <p class="mt-4 text-lg font-semibold">Stay inspired with free curated sample packs from top artists.</p>
-        </a>
+       <section class="mt-4 relative card rounded hover:shadow-lg">
+        <div class="p-6 relative z-10 sm:w-7/12">
+          <a href="#" class="inline-block">
+            <h2 class="text-sm text-gray-500">LANDR Samples</h2>
+            <p class="mt-4 text-lg font-semibold">Stay inspired with free curated sample packs from top artists.</p>
+          </a>
+        </div>
+        <img class="absolute inset-0 w-full h-full object-cover" src="./assets/img/samples-background@2x.jpg" alt="Hand playing synth">
       </section>
 
       <section class="mt-4 p-6 bg-white rounded">
