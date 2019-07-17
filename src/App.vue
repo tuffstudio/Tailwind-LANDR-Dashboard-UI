@@ -2,7 +2,7 @@
   <div id="app" class="relative bg-gray-100 antialiased text-gray-800">
 
     <header class="h-16">
-      <div class="px-6 py-4 flex justify-between bg-gray-900 fixed z-10 w-full">
+      <div class="px-6 py-4 flex justify-between bg-deep-ocean fixed z-10 w-full">
         <button class="flex items-center ">
           <svg class="h-8 w-8 fill-current text-gray-100" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"><g stroke="currentColor" stroke-width="1.5" fill="none" fill-rule="evenodd"><path d="M22.25 15a9.749 9.749 0 0 1-9.75 9.75A9.749 9.749 0 0 1 2.75 15a9.749 9.749 0 0 1 9.75-9.75A9.749 9.749 0 0 1 22.25 15z"></path><path d="M27.25 15a9.749 9.749 0 0 1-9.75 9.75A9.749 9.749 0 0 1 7.75 15a9.749 9.749 0 0 1 9.75-9.75A9.749 9.749 0 0 1 27.25 15z"></path></g></svg>
           <svg class="h-5 w-5 fill-current text-gray-100" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path d="M14.25 6.507L9.003 11.75 3.75 6.5" stroke-width="1.5" stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>
@@ -15,14 +15,14 @@
 
     <main class="px-5 py-6">
 
-      <div class="hidden sm:block">
-        <h1>Welcome to LANDR</h1>
-        <a href="#">See Plans</a>
+      <div class="hidden sm:flex justify-between items-center">
+        <h1 class="text-2xl font-semibold" >Welcome to LANDR</h1>
+        <a class="px-6 py-3 inline-block bg-yellow-500 text-xs leading-none font-semibold text-white rounded-sm" href="#">See Plans</a>
       </div>
 
       <section class="mt-4 flex shrink-0">
-        <div class="relative p-5">
-          <img class="absolute inset-0 h-full w-full rounded object-cover" src="https://app.landr.com/images/dashboard/banner-collab.jpg" alt="Guy in the music studio">
+        <div class="relative p-5 w-full">
+          <img class="absolute inset-0 h-full w-full rounded object-cover" src="./assets/img/banner-collab.jpg" alt="Guy in the music studio">
           <div class="p-4 w-9/12 relative">
             <h2 class="text-3xl leading-tight text-white font-semibold tracking-wide">Share tracks & ask for opinions.</h2>
             <p class="mt-3 text-white">Take notes for yourself, or ask for feedback after you've mastered.</p>
@@ -34,7 +34,7 @@
        <section class="mt-4 card text-center bg-white rounded hover:shadow-lg">
         <a href="#" class="p-6 inline-block">
           <h2 class="text-sm text-gray-500">Master</h2>
-          <img class="p-12 pb-8" src="https://app.landr.com/images/dashboard/ill-empty_state-collab.svg" alt="Cat and human playing on the synth">
+          <img class="p-12 pb-8" src="./assets/img/ill-empty_state-collab.svg" alt="Cat and human playing on the synth">
           <p class="text-lg font-semibold">Share tracks, get feedback, make better music.</p>
         </a>
       </section>
@@ -42,7 +42,7 @@
       <section class="mt-4 card text-center bg-white rounded hover:shadow-lg">
         <a href="#" class="p-6 inline-block">
           <h2 class="text-sm text-gray-500">Collaborate</h2>
-          <img class="p-12 pb-8" src="https://app.landr.com/images/dashboard/ill-empty_state-collab.svg" alt="Cat and human playing on the synth">
+          <img class="p-12 pb-8" src="./assets/img/ill-empty_state-collab.svg" alt="Cat and human playing on the synth">
           <p class="text-lg font-semibold">Share tracks, get feedback, make better music.</p>
         </a>
       </section>
@@ -50,7 +50,7 @@
        <section class="mt-4 card text-center bg-white rounded hover:shadow-lg">
         <a href="#" class="p-6 inline-block">
           <h2 class="text-sm text-gray-500">Distriute</h2>
-          <img class="p-12 pb-8" src="https://app.landr.com/images/dashboard/ill-empty_state-collab.svg" alt="Cat and human playing on the synth">
+          <img class="p-12 pb-8" src="./assets/img/ill-empty_state-collab.svg" alt="Cat and human playing on the synth">
           <p class="text-lg font-semibold">Share tracks, get feedback, make better music.</p>
         </a>
       </section>
@@ -58,7 +58,7 @@
        <section class="mt-4 card text-center bg-white rounded hover:shadow-lg">
         <a href="#" class="p-6 inline-block">
           <h2 class="text-sm text-gray-500">Promote</h2>
-          <img class="p-12 pb-8" src="https://app.landr.com/images/dashboard/ill-empty_state-collab.svg" alt="Cat and human playing on the synth">
+          <img class="p-12 pb-8" src="./assets/img/ill-empty_state-collab.svg" alt="Cat and human playing on the synth">
           <p class="text-lg font-semibold">Share tracks, get feedback, make better music.</p>
         </a>
       </section>
