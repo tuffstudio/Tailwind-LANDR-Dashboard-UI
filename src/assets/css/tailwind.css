@@ -1,3 +1,8 @@
 @tailwind base;
 @taiwind components;
+
+section.card a:hover > p{
+    text-decoration: underline!important;
+}
+
 @tailwind utilities;
