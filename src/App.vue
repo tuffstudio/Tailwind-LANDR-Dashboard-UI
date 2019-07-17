@@ -1,7 +1,8 @@
 <template>
-  <div id="app" class="bg-gray-100 antialiased text-gray-800">
-    <header class="bg-gray-900">
-      <div class="px-6 py-4 flex justify-between">
+  <div id="app" class="relative bg-gray-100 antialiased text-gray-800">
+
+    <header class="h-16">
+      <div class="px-6 py-4 flex justify-between bg-gray-900 fixed z-10 w-full">
         <button class="flex items-center ">
           <svg class="h-8 w-8 fill-current text-gray-100" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"><g stroke="currentColor" stroke-width="1.5" fill="none" fill-rule="evenodd"><path d="M22.25 15a9.749 9.749 0 0 1-9.75 9.75A9.749 9.749 0 0 1 2.75 15a9.749 9.749 0 0 1 9.75-9.75A9.749 9.749 0 0 1 22.25 15z"></path><path d="M27.25 15a9.749 9.749 0 0 1-9.75 9.75A9.749 9.749 0 0 1 7.75 15a9.749 9.749 0 0 1 9.75-9.75A9.749 9.749 0 0 1 27.25 15z"></path></g></svg>
           <svg class="h-5 w-5 fill-current text-gray-100" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path d="M14.25 6.507L9.003 11.75 3.75 6.5" stroke-width="1.5" stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>
@@ -11,7 +12,9 @@
         </button>
       </div>
     </header>
+
     <main class="px-5 py-6">
+
       <div class="hidden sm:block">
         <h1>Welcome to LANDR</h1>
         <a href="#">See Plans</a>
@@ -28,47 +31,138 @@
         </div>
       </section>
 
-       <section class="mt-4 p-6 text-center bg-white rounded">
-        <a href="#" class="inline-block hover:shadow-lg hover:underline">
+       <section class="mt-4 text-center bg-white rounded">
+        <a href="#" class="p-6 inline-block hover:shadow-lg hover:underline">
           <h2 class="text-sm text-gray-500">Master</h2>
           <img class="p-12 pb-8" src="https://app.landr.com/images/dashboard/ill-empty_state-collab.svg" alt="Cat and human playing on the synth">
           <p class="text-lg font-semibold">Share tracks, get feedback, make better music.</p>
         </a>
       </section>
 
-      <section class="mt-4 p-6 text-center bg-white rounded">
-        <a href="#" class="inline-block hover:shadow-lg hover:underline">
+      <section class="mt-4 text-center bg-white rounded">
+        <a href="#" class="p-6 inline-block hover:shadow-lg hover:underline">
           <h2 class="text-sm text-gray-500">Collaborate</h2>
           <img class="p-12 pb-8" src="https://app.landr.com/images/dashboard/ill-empty_state-collab.svg" alt="Cat and human playing on the synth">
           <p class="text-lg font-semibold">Share tracks, get feedback, make better music.</p>
         </a>
       </section>
 
-       <section class="mt-4 p-6 text-center bg-white rounded">
-        <a href="#" class="inline-block hover:shadow-lg hover:underline">
+       <section class="mt-4 text-center bg-white rounded">
+        <a href="#" class="p-6 inline-block hover:shadow-lg hover:underline">
           <h2 class="text-sm text-gray-500">Distriute</h2>
           <img class="p-12 pb-8" src="https://app.landr.com/images/dashboard/ill-empty_state-collab.svg" alt="Cat and human playing on the synth">
           <p class="text-lg font-semibold">Share tracks, get feedback, make better music.</p>
         </a>
       </section>
 
-       <section class="mt-4 p-6 text-center bg-white rounded">
-        <a href="#" class="inline-block hover:shadow-lg hover:underline">
+       <section class="mt-4 text-center bg-white rounded">
+        <a href="#" class="p-6 inline-block hover:shadow-lg hover:underline">
           <h2 class="text-sm text-gray-500">Promote</h2>
           <img class="p-12 pb-8" src="https://app.landr.com/images/dashboard/ill-empty_state-collab.svg" alt="Cat and human playing on the synth">
           <p class="text-lg font-semibold">Share tracks, get feedback, make better music.</p>
         </a>
       </section>
 
-      <section class="mt-4 p-6 bg-white rounded">
-        <a href="#" class="inline-block hover:shadow-lg hover:underline">
+      <section class="mt-4 bg-white rounded">
+        <div class="p-6 inline-block w-full">
+          <h2 class="text-sm text-gray-500">Recent work</h2>
+            
+            <div class="mt-8">
+
+              <div class="flex items-center border-t border-b">
+                <div class="pl-0 pr-4 py-4">
+                  <svg class="h-8 w-8" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"><g stroke="currentColor" stroke-width="1.5" fill="none" fill-rule="evenodd"><circle cx="9.5" cy="20.5" r="1.75"></circle><circle cx="19" cy="19" r="1.75"></circle><path d="M11.25 20v-6.5M20.75 18.25V11.5" stroke-linecap="square"></path><path stroke-linejoin="round" d="M11.25 9.75l9.5-2v5l-9.5 2z"></path><rect x="3.75" y="3.75" width="22.5" height="22.5" rx="1.25"></rect></g></svg>
+                </div>
+                <div class="leading-tight">
+                  <div class="flex items-end">
+                    <h3 class="font-semibold">Moon Rising-9e</h3>
+                    <svg class="w-4 h-4 ml-1 fill-current text-gray-500" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M6.563 13.827a6 6 0 1 1 7.403-5.188 2.001 2.001 0 0 0-3.274 2.111H8.256c-1.12 0-2.006.895-2.006 2 0 .398.115.767.313 1.077zM8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" fill="currentColor"></path><path d="M8.5 12.75h6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path><path stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M12.75 10.25l2.5 2.5-2.5 2.5"></path></g></svg>
+                  </div>
+                  <span class="text-sm text-gray-500">Jul 5, 2019 &middot; 1 Master</span>
+                </div>
+              </div>
+  
+              <div class="flex items-center border-b">
+                <div class="pl-0 pr-4 py-4">
+                  <svg class="h-8 w-8" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"><g stroke="currentColor" stroke-width="1.5" fill="none" fill-rule="evenodd"><circle cx="9.5" cy="20.5" r="1.75"></circle><circle cx="19" cy="19" r="1.75"></circle><path d="M11.25 20v-6.5M20.75 18.25V11.5" stroke-linecap="square"></path><path stroke-linejoin="round" d="M11.25 9.75l9.5-2v5l-9.5 2z"></path><rect x="3.75" y="3.75" width="22.5" height="22.5" rx="1.25"></rect></g></svg>
+                </div>
+                <div class="leading-tight">
+                  <div class="flex items-end">
+                    <h3 class="font-semibold">MR-Master FREE VSTs - no</h3>
+                    <svg class="w-4 h-4 ml-1 fill-current text-gray-500" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M6.563 13.827a6 6 0 1 1 7.403-5.188 2.001 2.001 0 0 0-3.274 2.111H8.256c-1.12 0-2.006.895-2.006 2 0 .398.115.767.313 1.077zM8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" fill="currentColor"></path><path d="M8.5 12.75h6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path><path stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M12.75 10.25l2.5 2.5-2.5 2.5"></path></g></svg>
+                  </div>
+                  <span class="text-sm text-gray-500">Jul 5, 2019 &middot; 1 Master</span>
+                </div>
+              </div>
+
+              <div class="flex items-center border-b">
+                <div class="pl-0 pr-4 py-4">
+                  <svg class="h-8 w-8" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"><g stroke="currentColor" stroke-width="1.5" fill="none" fill-rule="evenodd"><circle cx="9.5" cy="20.5" r="1.75"></circle><circle cx="19" cy="19" r="1.75"></circle><path d="M11.25 20v-6.5M20.75 18.25V11.5" stroke-linecap="square"></path><path stroke-linejoin="round" d="M11.25 9.75l9.5-2v5l-9.5 2z"></path><rect x="3.75" y="3.75" width="22.5" height="22.5" rx="1.25"></rect></g></svg>
+                </div>
+                <div class="leading-tight">
+                  <div class="flex items-end">
+                    <h3 class="font-semibold">MR-Master-9c-NO_LIMIT</h3>
+                    <svg class="w-4 h-4 ml-1 fill-current text-gray-500" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M6.563 13.827a6 6 0 1 1 7.403-5.188 2.001 2.001 0 0 0-3.274 2.111H8.256c-1.12 0-2.006.895-2.006 2 0 .398.115.767.313 1.077zM8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" fill="currentColor"></path><path d="M8.5 12.75h6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path><path stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M12.75 10.25l2.5 2.5-2.5 2.5"></path></g></svg>
+                  </div>
+                  <span class="text-sm text-gray-500">Jul 5, 2019 &middot; 1 Master</span>
+                </div>
+              </div>
+
+              <div class="flex items-center border-b">
+                <div class="pl-0 pr-4 py-4">
+                  <svg class="h-8 w-8" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"><g stroke="currentColor" stroke-width="1.5" fill="none" fill-rule="evenodd"><circle cx="9.5" cy="20.5" r="1.75"></circle><circle cx="19" cy="19" r="1.75"></circle><path d="M11.25 20v-6.5M20.75 18.25V11.5" stroke-linecap="square"></path><path stroke-linejoin="round" d="M11.25 9.75l9.5-2v5l-9.5 2z"></path><rect x="3.75" y="3.75" width="22.5" height="22.5" rx="1.25"></rect></g></svg>
+                </div>
+                <div class="leading-tight">
+                  <div class="flex items-end">
+                    <h3 class="font-semibold">Moon Rising-9c</h3>
+                    <svg class="w-4 h-4 ml-1 fill-current text-gray-500" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M6.563 13.827a6 6 0 1 1 7.403-5.188 2.001 2.001 0 0 0-3.274 2.111H8.256c-1.12 0-2.006.895-2.006 2 0 .398.115.767.313 1.077zM8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" fill="currentColor"></path><path d="M8.5 12.75h6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path><path stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M12.75 10.25l2.5 2.5-2.5 2.5"></path></g></svg>
+                  </div>
+                  <span class="text-sm text-gray-500">Jul 5, 2019 &middot; 1 Master</span>
+                </div>
+              </div>
+
+              <div class="flex items-center border-b">
+                <div class="pl-0 pr-4 py-4">
+                  <svg class="h-8 w-8" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"><g stroke="currentColor" stroke-width="1.5" fill="none" fill-rule="evenodd"><circle cx="9.5" cy="20.5" r="1.75"></circle><circle cx="19" cy="19" r="1.75"></circle><path d="M11.25 20v-6.5M20.75 18.25V11.5" stroke-linecap="square"></path><path stroke-linejoin="round" d="M11.25 9.75l9.5-2v5l-9.5 2z"></path><rect x="3.75" y="3.75" width="22.5" height="22.5" rx="1.25"></rect></g></svg>
+                </div>
+                <div class="leading-tight">
+                  <div class="flex items-end">
+                    <h3 class="font-semibold">Moon Rising-9b</h3>
+                    <svg class="w-4 h-4 ml-1 fill-current text-gray-500" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M6.563 13.827a6 6 0 1 1 7.403-5.188 2.001 2.001 0 0 0-3.274 2.111H8.256c-1.12 0-2.006.895-2.006 2 0 .398.115.767.313 1.077zM8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" fill="currentColor"></path><path d="M8.5 12.75h6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path><path stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M12.75 10.25l2.5 2.5-2.5 2.5"></path></g></svg>
+                  </div>
+                  <span class="text-sm text-gray-500">Jul 5, 2019 &middot; 1 Master</span>
+                </div>
+              </div>
+
+              <div class="flex items-center border-b">
+                <div class="pl-0 pr-4 py-4">
+                  <svg class="h-8 w-8" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"><g stroke="currentColor" stroke-width="1.5" fill="none" fill-rule="evenodd"><circle cx="9.5" cy="20.5" r="1.75"></circle><circle cx="19" cy="19" r="1.75"></circle><path d="M11.25 20v-6.5M20.75 18.25V11.5" stroke-linecap="square"></path><path stroke-linejoin="round" d="M11.25 9.75l9.5-2v5l-9.5 2z"></path><rect x="3.75" y="3.75" width="22.5" height="22.5" rx="1.25"></rect></g></svg>
+                </div>
+                <div class="leading-tight">
+                  <div class="flex items-end">
+                    <h3 class="font-semibold">Moon Rising-9a test2</h3>
+                    <svg class="w-4 h-4 ml-1 fill-current text-gray-500" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M6.563 13.827a6 6 0 1 1 7.403-5.188 2.001 2.001 0 0 0-3.274 2.111H8.256c-1.12 0-2.006.895-2.006 2 0 .398.115.767.313 1.077zM8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" fill="currentColor"></path><path d="M8.5 12.75h6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path><path stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M12.75 10.25l2.5 2.5-2.5 2.5"></path></g></svg>
+                  </div>
+                  <span class="text-sm text-gray-500">Jul 5, 2019 &middot; 1 Master</span>
+                </div>
+              </div>
+
+            </div>
+
+            <a class="mt-1 inline-block text-xs float-right font-semibold" href="#">See all files</a>
+
+        </div>
+      </section>
+
+      <section class="mt-4 bg-white rounded">
+        <a href="#" class="p-6 inline-block hover:shadow-lg hover:underline">
           <h2 class="text-sm text-gray-500">The LANDR Blog</h2>
           <p class="mt-4 text-lg font-semibold">Get the best tools, tips and inspiration you need to grow your music everyday.</p>
         </a>
       </section>
 
-       <section class="mt-4 p-6  bg-gray-200 rounded">
-        <a href="#" class="inline-block hover:shadow-lg hover:underline">
+       <section class="mt-4 bg-gray-200 rounded hover:shadow-lg hover:underline">
+        <a href="#" class="p-6 inline-block">
           <h2 class="text-sm text-gray-500">LANDR Samples</h2>
           <p class="mt-4 text-lg font-semibold">Stay inspired with free curated sample packs from top artists.</p>
         </a>
@@ -92,7 +186,7 @@
     </main>
     <footer class="px-4 py-2 border-t ">
       <a class="text-sm underline hover:no-underline" href="#">Privacy Policy</a>
-      <span>-</span>
+      <span class="mx-1">-</span>
       <a class="text-sm underline hover:no-underline" href="#">Terms of Service</a>
       <div class="text-sm flex items-center">
         <span class="text-xs">
