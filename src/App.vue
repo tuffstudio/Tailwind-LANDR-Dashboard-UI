@@ -1,5 +1,5 @@
 <template>
-  <div id="app" class="bg-gray-100 antialiased">
+  <div id="app" class="bg-gray-100 antialiased text-gray-800">
     <header class="bg-gray-900">
       <div class="px-6 py-4 flex justify-between">
         <button class="flex items-center ">
@@ -30,12 +30,25 @@
         <a href="#" class="inline-block p-6 hover:shadow-lg hover:underline">
           <h2 class="text-sm text-gray-500">Collaborate</h2>
           <img class="p-12 pb-8" src="https://app.landr.com/images/dashboard/ill-empty_state-collab.svg" alt="Cat and human playing on the synth">
-          <p class="text-lg text-gray-800 font-semibold">Share tracks, get feedback, make better music.</p>
+          <p class="text-lg font-semibold">Share tracks, get feedback, make better music.</p>
         </a>
       </section>
     </main>
-    <footer>
-
+    <footer class="px-4 py-2 border-t ">
+      <a class="text-sm underline hover:no-underline" href="#">Privacy Policy</a>
+      <span>-</span>
+      <a class="text-sm underline hover:no-underline" href="#">Terms of Service</a>
+      <div class="text-sm flex items-center">
+        <span class="text-xs">
+          &copy;
+        </span>
+        <p class="mx-1">
+          2019 LANDR. Need help?
+        </p>
+        <a class="text-teal-400 underline hover:no-underline" href="#">
+          Contact support
+        </a>
+      </div>
     </footer>
   </div>
 </template>
