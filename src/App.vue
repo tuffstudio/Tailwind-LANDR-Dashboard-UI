@@ -11,28 +11,84 @@
         </button>
       </div>
     </header>
-    <main class="p-4">
+    <main class="px-5 py-6">
       <div class="hidden sm:block">
         <h1>Welcome to LANDR</h1>
         <a href="#">See Plans</a>
       </div>
+
       <section class="mt-4 flex shrink-0">
         <div class="relative p-5">
           <img class="absolute inset-0 h-full w-full rounded object-cover" src="https://app.landr.com/images/dashboard/banner-collab.jpg" alt="Guy in the music studio">
           <div class="p-4 w-9/12 relative">
             <h2 class="text-3xl leading-tight text-white font-semibold tracking-wide">Share tracks & ask for opinions.</h2>
-            <p class="mt-3 text-white text-md">Take notes for yourself, or ask for feedback after you've mastered.</p>
+            <p class="mt-3 text-white">Take notes for yourself, or ask for feedback after you've mastered.</p>
             <a class="mt-5 inline-block px-8 py-3 bg-gray-100 text-sm text-gray-700 font-semibold rounded-sm" href="#">Get feedback</a>
           </div>
         </div>
       </section>
-      <section class="mt-4 text-center bg-white rounded">
-        <a href="#" class="inline-block p-6 hover:shadow-lg hover:underline">
+
+       <section class="mt-4 p-6 text-center bg-white rounded">
+        <a href="#" class="inline-block hover:shadow-lg hover:underline">
+          <h2 class="text-sm text-gray-500">Master</h2>
+          <img class="p-12 pb-8" src="https://app.landr.com/images/dashboard/ill-empty_state-collab.svg" alt="Cat and human playing on the synth">
+          <p class="text-lg font-semibold">Share tracks, get feedback, make better music.</p>
+        </a>
+      </section>
+
+      <section class="mt-4 p-6 text-center bg-white rounded">
+        <a href="#" class="inline-block hover:shadow-lg hover:underline">
           <h2 class="text-sm text-gray-500">Collaborate</h2>
           <img class="p-12 pb-8" src="https://app.landr.com/images/dashboard/ill-empty_state-collab.svg" alt="Cat and human playing on the synth">
           <p class="text-lg font-semibold">Share tracks, get feedback, make better music.</p>
         </a>
       </section>
+
+       <section class="mt-4 p-6 text-center bg-white rounded">
+        <a href="#" class="inline-block hover:shadow-lg hover:underline">
+          <h2 class="text-sm text-gray-500">Distriute</h2>
+          <img class="p-12 pb-8" src="https://app.landr.com/images/dashboard/ill-empty_state-collab.svg" alt="Cat and human playing on the synth">
+          <p class="text-lg font-semibold">Share tracks, get feedback, make better music.</p>
+        </a>
+      </section>
+
+       <section class="mt-4 p-6 text-center bg-white rounded">
+        <a href="#" class="inline-block hover:shadow-lg hover:underline">
+          <h2 class="text-sm text-gray-500">Promote</h2>
+          <img class="p-12 pb-8" src="https://app.landr.com/images/dashboard/ill-empty_state-collab.svg" alt="Cat and human playing on the synth">
+          <p class="text-lg font-semibold">Share tracks, get feedback, make better music.</p>
+        </a>
+      </section>
+
+      <section class="mt-4 p-6 bg-white rounded">
+        <a href="#" class="inline-block hover:shadow-lg hover:underline">
+          <h2 class="text-sm text-gray-500">The LANDR Blog</h2>
+          <p class="mt-4 text-lg font-semibold">Get the best tools, tips and inspiration you need to grow your music everyday.</p>
+        </a>
+      </section>
+
+       <section class="mt-4 p-6  bg-gray-200 rounded">
+        <a href="#" class="inline-block hover:shadow-lg hover:underline">
+          <h2 class="text-sm text-gray-500">LANDR Samples</h2>
+          <p class="mt-4 text-lg font-semibold">Stay inspired with free curated sample packs from top artists.</p>
+        </a>
+      </section>
+
+      <section class="mt-4 p-6 bg-white rounded">
+        <h2 class="text-2xl leading-tight font-semibold tracking-wide">Stay in the loop with the LANDR newsletter</h2>
+        <p class="mt-4 text-sm text-gray-600">Sing up to get the best music tips, tools and tutorials direct to your inbox.</p>
+        
+        <form class="w-full max-w-sm mt-12">
+          <div class="flex items-center border">
+            <input class="py-1 px-4 appearance-none bg-transparent w-full text-gray-700 leading-tight focus:outline-none" type="email" placeholder="Email" aria-label="Email">
+            <button class="py-3 px-5 flex-shrink-0 border-l text-sm font-semibold text-teal-400" type="button">
+              Subscribe
+            </button>
+          </div>
+        </form>     
+
+      </section>
+
     </main>
     <footer class="px-4 py-2 border-t ">
       <a class="text-sm underline hover:no-underline" href="#">Privacy Policy</a>
