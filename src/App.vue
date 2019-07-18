@@ -31,40 +31,12 @@
         </div>
       </section>
 
-      <div class="block sm:flex sm:flex-wrap sm:-mx-2">
-      
-          <section class="mt-4 card text-center sm:w-1/2 sm:px-2">
-            <a href="#" class="p-6 bg-white inline-block rounded hover:shadow-lg">
-              <h2 class="text-sm text-gray-500">Master</h2>
-              <img class="p-12 pb-8" src="./assets/img/ill-empty_state-collab.svg" alt="Cat and human playing on the synth">
-              <p class="text-lg font-semibold">Share tracks, get feedback, make better music.</p>
-            </a>
-          </section>
-  
-          <section class="mt-4 card text-center sm:w-1/2 sm:px-2">
-            <a href="#" class="p-6 bg-white inline-block rounded hover:shadow-lg">
-              <h2 class="text-sm text-gray-500">Collaborate</h2>
-              <img class="p-12 pb-8" src="./assets/img/ill-empty_state-collab.svg" alt="Cat and human playing on the synth">
-              <p class="text-lg font-semibold">Share tracks, get feedback, make better music.</p>
-            </a>
-          </section>
-  
-        <section class="mt-4 card text-center sm:w-1/2 sm:px-2">
-          <a href="#" class="p-6 bg-white inline-block rounded hover:shadow-lg">
-            <h2 class="text-sm text-gray-500">Distriute</h2>
-            <img class="p-12 pb-8" src="./assets/img/ill-empty_state-collab.svg" alt="Cat and human playing on the synth">
-            <p class="text-lg font-semibold">Share tracks, get feedback, make better music.</p>
-          </a>
-        </section>
-  
-        <section class="mt-4 card text-center sm:w-1/2 sm:px-2">
-          <a href="#" class="p-6 bg-white inline-block rounded hover:shadow-lg">
-            <h2 class="text-sm text-gray-500">Promote</h2>
-            <img class="p-12 pb-8" src="./assets/img/ill-empty_state-collab.svg" alt="Cat and human playing on the synth">
-            <p class="text-lg font-semibold">Share tracks, get feedback, make better music.</p>
-          </a>
-        </section>
-      </div>
+      <section class="block sm:flex sm:flex-wrap sm:-mx-2">
+        <div v-for="(stat, i) in stats" class="mt-4 card text-center sm:w-1/2 sm:px-2">
+          <UserStats :stat="stat"/>
+        </div>
+      </section>
+
 
       <section class="mt-4 bg-white rounded">
         <div class="p-6 inline-block w-full">
@@ -213,9 +185,43 @@
 </template>
 
 <script>
+import UserStats from "@/components/UserStats.vue";
+
 export default {
   name: 'app',
-  components: {}
+  components: {
+    UserStats,
+  },
+  data(){
+    return{
+      stats: [
+        {
+          title: "Master",
+          imageUrl: 'https://app.landr.com/images/dashboard/ill-empty_state-collab.svg',
+          imageAlt: "Mastering stats",
+          tagline: "",
+        },
+        {
+          title: "Collaborate",
+          imageUrl: 'https://app.landr.com/images/dashboard/ill-empty_state-collab.svg',
+          imageAlt: "Cat and human playin on synth",
+          tagline: "Share tracks, get feedback, make better music.",
+        },
+        {
+          title: "Distribute",
+          imageUrl: 'https://app.landr.com/images/dashboard/ill-empty_state-collab.svg',
+          imageAlt: "Distribution stats",
+          tagline: "",
+        },
+        {
+          title: "Promote",
+          imageUrl: 'https://app.landr.com/images/dashboard/ill-empty_state-collab.svg',
+          imageAlt: "Promotion stats",
+          tagline: "",
+        },
+      ]
+    }
+  }
 }
 </script>
 
