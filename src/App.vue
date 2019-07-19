@@ -1,16 +1,34 @@
 <template>
   <div id="app" class="relative bg-gray-100 antialiased text-gray-800">
 
-    <header class="h-16 bg-deep-ocean fixed z-10 w-full">
-      <div class="px-6 py-4 flex justify-between max-w-6xl xl:mx-auto">
-        <button class="flex items-center ">
-          <svg class="h-8 w-8 fill-current text-gray-100" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"><g stroke="currentColor" stroke-width="1.5" fill="none" fill-rule="evenodd"><path d="M22.25 15a9.749 9.749 0 0 1-9.75 9.75A9.749 9.749 0 0 1 2.75 15a9.749 9.749 0 0 1 9.75-9.75A9.749 9.749 0 0 1 22.25 15z"></path><path d="M27.25 15a9.749 9.749 0 0 1-9.75 9.75A9.749 9.749 0 0 1 7.75 15a9.749 9.749 0 0 1 9.75-9.75A9.749 9.749 0 0 1 27.25 15z"></path></g></svg>
-          <svg class="h-5 w-5 fill-current text-gray-100" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path d="M14.25 6.507L9.003 11.75 3.75 6.5" stroke-width="1.5" stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-        </button>
+    <header class="bg-deep-ocean fixed z-10 w-full">
+      <div class="px-6 flex justify-between max-w-7xl xl:mx-auto">
+        <div class="relative flex items-center ">
+          <a href="#home">
+            <svg class="h-8 w-8 md:h-10 md:w-10 fill-current text-gray-100 hover:text-gray-500" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"><g stroke="currentColor" stroke-width="1.5" fill="none" fill-rule="evenodd"><path d="M22.25 15a9.749 9.749 0 0 1-9.75 9.75A9.749 9.749 0 0 1 2.75 15a9.749 9.749 0 0 1 9.75-9.75A9.749 9.749 0 0 1 22.25 15z"></path><path d="M27.25 15a9.749 9.749 0 0 1-9.75 9.75A9.749 9.749 0 0 1 7.75 15a9.749 9.749 0 0 1 9.75-9.75A9.749 9.749 0 0 1 27.25 15z"></path></g></svg>
+          </a>
+          <button class="absolute pl-8 w-full h-full md:hidden">
+            <svg class="h-5 w-5 fill-current text-gray-100" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path d="M14.25 6.507L9.003 11.75 3.75 6.5" stroke-width="1.5" stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+          </button>
+        </div>
+        <nav class="invisible md:visible flex w-full">
+            <div class="ml-8 py-4 md:py-6 inline-block border-b-2 border-teal-400 w-auto">
+              <a class="text-gray-500 hover:text-gray-300 cursor-pointer font-semibold">Home</a>
+            </div>
+            <div class="ml-8 py-4 md:py-6 inline-block">
+              <a class="text-gray-500 hover:text-gray-300 cursor-pointer font-semibold">Library</a>
+            </div>
+            <div class="ml-8 py-4 md:py-6 inline-block">
+              <a class="text-gray-500 hover:text-gray-300 cursor-pointer font-semibold">Releases</a>
+            </div>
+            <div class="ml-8 py-4 md:py-6 inline-block">
+              <a class="text-gray-500 hover:text-gray-300 cursor-pointer font-semibold">Samples</a>
+            </div>
+        </nav>
         <button class="relative">
-          <svg class="h-6 w-6 fill-current text-gray-100" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M14 5c-.294-1.162-1.081-2-2.006-2-.913 0-1.69.864-1.994 2" fill="currentColor"></path><path d="M9 17.25a3 3 0 0 0 6 0" stroke="currentColor" stroke-width="1.5"></path><path d="M17.25 13.248l.503 1c.827 0 1.497.666 1.497 1.5 0 .83-.68 1.502-1.497 1.502H6.247a1.495 1.495 0 0 1-1.497-1.501c0-.83.68-1.501 1.497-1.501l.503-1v-2.994c0-3.04 2.24-5.504 5.004-5.504h.492c2.764 0 5.004 2.471 5.004 5.504v2.994z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></g></svg>
+          <svg class="h-6 w-6 fill-current text-gray-100 hover:text-gray-500" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M14 5c-.294-1.162-1.081-2-2.006-2-.913 0-1.69.864-1.994 2" fill="currentColor"></path><path d="M9 17.25a3 3 0 0 0 6 0" stroke="currentColor" stroke-width="1.5"></path><path d="M17.25 13.248l.503 1c.827 0 1.497.666 1.497 1.5 0 .83-.68 1.502-1.497 1.502H6.247a1.495 1.495 0 0 1-1.497-1.501c0-.83.68-1.501 1.497-1.501l.503-1v-2.994c0-3.04 2.24-5.504 5.004-5.504h.492c2.764 0 5.004 2.471 5.004 5.504v2.994z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></g></svg>
           <div class="absolute z-40 right-0">
-            <div class="mt-4 bg-white rounded-sm w-96 shadow-xl overflow-y-hidden">
+            <div class="mt-4 bg-white rounded-sm w-96 shadow-xl overflow-y-hidden ">
               <div class="p-4 flex justify-between items-center">
                 <span>Notifications</span>
                 <button type="button">Mark all as seen</button>
@@ -26,7 +44,7 @@
       </div>
     </header>
 
-    <main class="px-5 py-6 md:px-10 max-w-6xl xl:mx-auto">
+    <main class="px-5 py-6 md:px-10 xl:mx-auto max-w-8xl">
 
       <div class="hidden sm:flex justify-between items-center">
         <h1 class="text-2xl font-semibold" >Welcome to LANDR</h1>
