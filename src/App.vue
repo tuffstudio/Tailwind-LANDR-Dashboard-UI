@@ -34,7 +34,7 @@
                 <button type="button">Mark all as seen</button>
               </div>
               <div class="overflow-y-auto h-64">
-                <div v-for="(notification, i) in notifications" :class="{'border-t' : i === 0 }" class="border-b">
+                <div v-bind:key="notification.id" v-for="(notification, i) in notifications" :class="{'border-t' : i === 0 }" class="border-b">
 	                  <Notification :notification="notification"/>
 	              </div>
               </div>
@@ -64,7 +64,7 @@
 
       <div class="block lg:flex">
 	      <section class="block sm:flex sm:flex-wrap sm:-mx-2 lg:w-1/2">
-	        <div v-for="(stat, i) in stats" class="card mt-4 text-center sm:w-1/2 sm:px-2">
+	        <div v-bind:key="stat.id" v-for="stat in stats" class="card mt-4 text-center sm:w-1/2 sm:px-2">
 	          <UserStats :stat="stat"/>
 	        </div>
 	      </section>
@@ -73,7 +73,7 @@
 	        <div class="p-6 inline-block w-full">
 	          <h2 class="text-sm text-gray-500">Recent work</h2>
 	            <div class="mt-8">
-	                <div v-for="(track, i) in tracks" :class="{'border-t' : i === 0 }" class="border-b">
+	                <div v-bind:key="track.id" v-for="(track, i) in tracks" :class="{'border-t' : i === 0 }" class="border-b">
 	                  <MasteredTrack :track="track"/>
 	                </div>
 	            </div>
