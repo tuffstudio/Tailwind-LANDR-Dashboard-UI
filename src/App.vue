@@ -61,7 +61,7 @@
           </div>
         </div>
       </section>
-
+<!-- stats -->
       <div class="block lg:flex">
 	      <section class="block sm:flex sm:flex-wrap sm:-mx-2 lg:w-1/2">
 	        <div v-bind:key="stat.id" v-for="stat in stats" class="card mt-4 text-center sm:w-1/2 sm:px-2">
@@ -81,8 +81,10 @@
 	        </div>
 	      </section>
       </div>
+
+<!-- selecetd posts -->
       <section class="lg:flex lg:-mx-2">
-  <!-- blog -->
+      <!-- blog post-->
         <div class="mt-4 lg:w-1/2 lg:pl-2 lg:pr-4 ">
           <section class="card h-full bg-white rounded hover:shadow-lg">
             <a href="#" class="p-6 inline-block md:flex justify-between">
@@ -94,62 +96,26 @@
             </a>
           </section>
         </div>
-  <!-- samples -->
+      <!-- samples post -->
         <div class="mt-4 lg:w-1/2 lg:pl-0 lg:pr-2 ">
          <section class="card relative h-full rounded hover:shadow-lg">
-          <div class="p-6 relative z-10 sm:w-7/12">
-            <a href="#" class="inline-block">
-              <h2 class="text-sm text-gray-500">LANDR Samples</h2>
-              <p class="mt-4 text-lg font-semibold">Stay inspired with free curated sample packs from top artists.</p>
-            </a>
-          </div>
-          <img class="absolute inset-0 w-full h-full object-cover rounded" src="./assets/img/samples-background@2x.jpg" alt="Hand playing synth">
-        </section>
+            <div class="p-6 relative z-10 sm:w-7/12">
+              <a href="#" class="inline-block">
+                <h2 class="text-sm text-gray-500">LANDR Samples</h2>
+                <p class="mt-4 text-lg font-semibold">Stay inspired with free curated sample packs from top artists.</p>
+              </a>
+            </div>
+            <img class="absolute inset-0 w-full h-full object-cover rounded" src="./assets/img/samples-background@2x.jpg" alt="Hand playing synth">
+          </section>
         </div>
       </section>
-<!-- newsletter -->
-      <section class="mt-4 p-6 bg-white rounded">
-
-        <div class="md:flex md:items-center md:-mx-2">
-          <div class="w-full md:w-1/2 md:px-2">
-            <h2 class="text-2xl leading-tight font-semibold tracking-wide">Stay in the loop with the LANDR newsletter</h2>
-            <p class="mt-4 text-sm text-gray-600">Sing up to get the best music tips, tools and tutorials direct to your inbox.</p>
-          </div>
-          
-          <div class="w-full md:w-1/2 md:px-2">
-            <form class="w-full mt-12 md:mt-0">
-              <div class="flex items-center border">
-                <input class="py-1 px-4 appearance-none bg-transparent w-full text-gray-700 leading-tight focus:outline-none" type="email" placeholder="Email" aria-label="Email">
-                <button class="py-3 px-5 flex-shrink-0 border-l text-sm font-semibold text-teal-400" type="button">
-                  Subscribe
-                </button>
-              </div>
-            </form>   
-          </div> 
-        </div> 
-
-      </section>
-
-    </main>
-    <footer class="px-4 py-2 md:px-10 border-t sm:flex sm:justify-between">
-      <div>
-        <a class="text-sm underline hover:no-underline" href="#">Privacy Policy</a>
-        <span class="mx-1">-</span>
-        <a class="text-sm underline hover:no-underline" href="#">Terms of Service</a>
-      </div>
+   
+      <NewsletterSubscribe/>
       
-      <div class="text-sm flex items-center">
-        <span class="text-xs">
-          &copy;
-        </span>
-        <p class="mx-1">
-          2019 LANDR. Need help?
-        </p>
-        <a class="text-teal-400 underline hover:no-underline" href="#">
-          Contact support
-        </a>
-      </div>
-    </footer>
+    </main>
+    
+      <Footer/>
+
   </div>
 </template>
 
@@ -157,6 +123,8 @@
 import UserStats from "@/components/UserStats.vue";
 import MasteredTrack from "@/components/MasteredTrack.vue";
 import Notification from "@/components/Notification.vue";
+import NewsletterSubscribe from "@/components/NewsletterSubscribe.vue";
+import Footer from "@/components/Footer.vue";
 
 export default {
   name: 'app',
@@ -164,6 +132,8 @@ export default {
     UserStats,
     MasteredTrack,
     Notification,
+    NewsletterSubscribe,
+    Footer,
   },
   data(){
     return{
