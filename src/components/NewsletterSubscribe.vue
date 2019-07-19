@@ -11,7 +11,7 @@
             <form class="w-full mt-12 md:mt-0">
               <div class="flex items-center border">
                 <input class="py-1 px-4 appearance-none bg-transparent w-full text-gray-700 leading-tight focus:outline-none" type="email" placeholder="Email" aria-label="Email">
-                <button class="py-3 px-5 flex-shrink-0 border-l text-sm font-semibold text-teal-400" type="button">
+                <button type="button" class="py-3 px-5 flex-shrink-0 border-l text-sm font-semibold text-teal-400">
                   Subscribe
                 </button>
               </div>
