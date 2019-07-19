@@ -28,42 +28,42 @@
           </nav>
         </div>
 
-        <div class="absolute top-0 left-0 md:left-auto md:right-0 z-40">
-              <div class="mx-6 mt-12 md:mt-16 bg-white rounded-sm w-64 shadow-xl overflow-y-hidden">
-                <div class="py-4 px-6">
-                  <div class="flex justify-between items-center">
-                    <span class="text-sm font-semibold">User Name</span>
-                    <img class="w-10 h-10 rounded-full md:hidden" src="./assets/img/Profile.jpg" alt="Profile image">
-                  </div>
-                  <div class="pb-2 border-b">
-                    <p class="text-sm text-gray-600">
-                      Advanced<span class="mx-1">&middot;</span><a href="#" class="text-teal-500">Upgrade</a>
-                    </p>
-                  </div>
-                  <div class="py-2 md:hidden border-b flex flex-col">
-                    <a href="#" class="py-2 hover:text-teal-400">Home</a>
-                    <a href="#" class="py-2 hover:text-teal-400">Library</a>
-                    <a href="#" class="py-2 hover:text-teal-400">Releases</a>
-                    <a href="#" class="py-2 hover:text-teal-400">Samples</a>
-                  </div>
-                  <div class="py-2 border-b flex flex-col">
-                    <a href="#" class="py-2 hover:text-teal-400">Account settings</a>
-                  </div>
-                  <div class="py-2 border-b flex flex-col">
-                    <a href="#" class="py-2 hover:text-teal-400">Desktop app</a>
-                    <a href="#" class="py-2 hover:text-teal-400">Blog</a>
-                    <a href="#" class="py-2 hover:text-teal-400">Pricing</a>
-                    <a href="#" class="py-2 hover:text-teal-400">Help</a>
-                    <a href="#" class="py-2 hover:text-teal-400">Give Feedback
-                      <span class="py-1 px-2 ml-2 bg-indigo-700 text-xs text-white uppercase rounded">new</span>
-                      </a>
-                  </div>
-                  <div class="py-2">
-                    <button type="button" class="py-1 hover:text-teal-400">Log out</button>
-                  </div>
-                </div>
+        <div class="absolute top-0 left-0 md:left-auto md:right-0 z-40 w-screen sm:w-auto">
+          <div class="mx-6 mt-12 md:mt-16 bg-white rounded-sm sm:w-64 shadow-xl overflow-y-hidden">
+            <div class="py-4 px-6 overflow-y-auto">
+              <div class="flex justify-between items-center">
+                <span class="text-sm font-semibold">User Name</span>
+                <img class="w-10 h-10 rounded-full md:hidden" src="./assets/img/Profile.jpg" alt="Profile image">
+              </div>
+              <div class="pb-2 border-b">
+                <p class="text-sm text-gray-600">
+                  Advanced<span class="mx-1">&middot;</span><a href="#" class="text-teal-500">Upgrade</a>
+                </p>
+              </div>
+              <div class="py-2 md:hidden border-b flex flex-col">
+                <a href="#" class="py-2 hover:text-teal-400">Home</a>
+                <a href="#" class="py-2 hover:text-teal-400">Library</a>
+                <a href="#" class="py-2 hover:text-teal-400">Releases</a>
+                <a href="#" class="py-2 hover:text-teal-400">Samples</a>
+              </div>
+              <div class="py-2 border-b flex flex-col">
+                <a href="#" class="py-2 hover:text-teal-400">Account settings</a>
+              </div>
+              <div class="py-2 border-b flex flex-col">
+                <a href="#" class="py-2 hover:text-teal-400">Desktop app</a>
+                <a href="#" class="py-2 hover:text-teal-400">Blog</a>
+                <a href="#" class="py-2 hover:text-teal-400">Pricing</a>
+                <a href="#" class="py-2 hover:text-teal-400">Help</a>
+                <a href="#" class="py-2 hover:text-teal-400">Give Feedback
+                  <span class="py-1 px-2 ml-2 bg-indigo-700 text-xs text-white uppercase rounded">new</span>
+                  </a>
+              </div>
+              <div class="py-2">
+                <button type="button" class="py-1 hover:text-teal-400">Log out</button>
               </div>
             </div>
+          </div>
+        </div>
 
         <div class="flex">
           <button class="relative">
@@ -86,8 +86,6 @@
             <img class="w-10 h-10 rounded-full" src="./assets/img/Profile.jpg" alt="Profile image">
           </button>
         </div>
-
-
 
       </div>
     </header>
