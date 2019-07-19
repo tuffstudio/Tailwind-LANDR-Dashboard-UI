@@ -2,28 +2,45 @@
   <div id="app" class="relative bg-gray-100 antialiased text-gray-800">
 
     <header class="bg-deep-ocean fixed z-10 w-full">
-      <div class="px-6 flex justify-between max-w-7xl xl:mx-auto">
+      <div class="px-6 relative flex justify-between max-w-7xl xl:mx-auto">
         <div class="flex">
           <div class="relative flex items-center ">
-            <a class="" href="#home">
+            <a href="#home">
               <svg class="h-8 w-8 md:h-10 md:w-10 fill-current text-gray-100 hover:text-gray-500" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"><g stroke="currentColor" stroke-width="1.5" fill="none" fill-rule="evenodd"><path d="M22.25 15a9.749 9.749 0 0 1-9.75 9.75A9.749 9.749 0 0 1 2.75 15a9.749 9.749 0 0 1 9.75-9.75A9.749 9.749 0 0 1 22.25 15z"></path><path d="M27.25 15a9.749 9.749 0 0 1-9.75 9.75A9.749 9.749 0 0 1 7.75 15a9.749 9.749 0 0 1 9.75-9.75A9.749 9.749 0 0 1 27.25 15z"></path></g></svg>
             </a>
             <button class="absolute pl-8 w-full h-full md:hidden">
               <svg class="h-5 w-5 fill-current text-gray-100" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path d="M14.25 6.507L9.003 11.75 3.75 6.5" stroke-width="1.5" stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>
             </button>
-            <div class="absolute top-0 left-0 z-40">
-              <div class="mt-12 md:hidden bg-white rounded-sm w-64 shadow-xl overflow-y-hidden">
+          </div>
+          <nav class="invisible md:visible flex w-full">
+              <div class="ml-8 py-4 md:py-6 inline-block border-b-2 border-teal-400 w-auto">
+                <a href="#" class="text-gray-500 hover:text-gray-300 font-semibold">Home</a>
+              </div>
+              <div class="ml-8 py-4 md:py-6 inline-block">
+                <a href="#" class="text-gray-500 hover:text-gray-300 font-semibold">Library</a>
+              </div>
+              <div class="ml-8 py-4 md:py-6 inline-block">
+                <a href="#" class="text-gray-500 hover:text-gray-300 font-semibold">Releases</a>
+              </div>
+              <div class="ml-8 py-4 md:py-6 inline-block">
+                <a href="#" class="text-gray-500 hover:text-gray-300 font-semibold">Samples</a>
+              </div>
+          </nav>
+        </div>
+
+        <div class="absolute top-0 left-0 md:left-auto md:right-0 z-40">
+              <div class="mx-6 mt-12 md:mt-16 bg-white rounded-sm w-64 shadow-xl overflow-y-hidden">
                 <div class="py-4 px-6">
                   <div class="flex justify-between items-center">
                     <span class="text-sm font-semibold">User Name</span>
-                    <img class="w-10 h-10 rounded-full" src="./assets/img/Profile.jpg" alt="Profile image">
+                    <img class="w-10 h-10 rounded-full md:hidden" src="./assets/img/Profile.jpg" alt="Profile image">
                   </div>
                   <div class="pb-2 border-b">
                     <p class="text-sm text-gray-600">
-                      Advanced<span class="mx-1">&middot;</span><a class="text-teal-500" href="#">Upgrade</a>
+                      Advanced<span class="mx-1">&middot;</span><a href="#" class="text-teal-500">Upgrade</a>
                     </p>
                   </div>
-                  <div class="py-2 md:invisible border-b flex flex-col">
+                  <div class="py-2 md:hidden border-b flex flex-col">
                     <a href="#" class="py-2 hover:text-teal-400">Home</a>
                     <a href="#" class="py-2 hover:text-teal-400">Library</a>
                     <a href="#" class="py-2 hover:text-teal-400">Releases</a>
@@ -47,22 +64,7 @@
                 </div>
               </div>
             </div>
-          </div>
-          <nav class="invisible md:visible flex w-full">
-              <div class="ml-8 py-4 md:py-6 inline-block border-b-2 border-teal-400 w-auto">
-                <a class="text-gray-500 hover:text-gray-300 cursor-pointer font-semibold">Home</a>
-              </div>
-              <div class="ml-8 py-4 md:py-6 inline-block">
-                <a class="text-gray-500 hover:text-gray-300 cursor-pointer font-semibold">Library</a>
-              </div>
-              <div class="ml-8 py-4 md:py-6 inline-block">
-                <a class="text-gray-500 hover:text-gray-300 cursor-pointer font-semibold">Releases</a>
-              </div>
-              <div class="ml-8 py-4 md:py-6 inline-block">
-                <a class="text-gray-500 hover:text-gray-300 cursor-pointer font-semibold">Samples</a>
-              </div>
-          </nav>
-        </div>
+
         <div class="flex">
           <button class="relative">
             <svg class="h-6 w-6 fill-current text-gray-100 hover:text-gray-500" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M14 5c-.294-1.162-1.081-2-2.006-2-.913 0-1.69.864-1.994 2" fill="currentColor"></path><path d="M9 17.25a3 3 0 0 0 6 0" stroke="currentColor" stroke-width="1.5"></path><path d="M17.25 13.248l.503 1c.827 0 1.497.666 1.497 1.5 0 .83-.68 1.502-1.497 1.502H6.247a1.495 1.495 0 0 1-1.497-1.501c0-.83.68-1.501 1.497-1.501l.503-1v-2.994c0-3.04 2.24-5.504 5.004-5.504h.492c2.764 0 5.004 2.471 5.004 5.504v2.994z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></g></svg>
@@ -84,6 +86,9 @@
             <img class="w-10 h-10 rounded-full" src="./assets/img/Profile.jpg" alt="Profile image">
           </button>
         </div>
+
+
+
       </div>
     </header>
 
@@ -91,7 +96,7 @@
 
       <div class="hidden sm:flex justify-between items-center">
         <h1 class="text-2xl font-semibold" >Welcome to LANDR</h1>
-        <a class="px-6 py-3 inline-block bg-yellow-500 text-xs leading-none font-semibold text-white rounded-sm" href="#">See Plans</a>
+        <a href="#" class="px-6 py-3 inline-block bg-yellow-500 text-xs leading-none font-semibold text-white rounded-sm">See Plans</a>
       </div>
 <!-- banner -->
       <section class="mt-4 md:mt-8 flex shrink-0">
@@ -100,7 +105,7 @@
           <div class="p-4 md:p-6 w-9/12 max-w-lg relative">
             <h2 class="text-3xl md:text-5xl leading-tight md:leading-none text-white font-semibold tracking-wide">Share tracks & ask for opinions.</h2>
             <p class="mt-3 text-white">Take notes for yourself, or ask for feedback after you've mastered.</p>
-            <a class="mt-5 inline-block px-8 py-3 bg-gray-100 text-sm text-gray-700 font-semibold rounded-sm" href="#">Get feedback</a>
+            <a href="#" class="mt-5 inline-block px-8 py-3 bg-gray-100 text-sm text-gray-700 font-semibold rounded-sm">Get feedback</a>
           </div>
         </div>
       </section>
@@ -120,7 +125,7 @@
 	                  <MasteredTrack :track="track"/>
 	                </div>
 	            </div>
-	            <a class="mt-1 inline-block text-xs float-right font-semibold" href="#">See all files</a>
+	            <a href="#" class="mt-1 inline-block text-xs float-right font-semibold">See all files</a>
 	        </div>
 	      </section>
       </div>
