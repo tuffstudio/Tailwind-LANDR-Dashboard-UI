@@ -44,7 +44,7 @@
       </div>
     </header>
 
-    <main class="px-5 py-6 md:px-10 xl:mx-auto max-w-8xl">
+    <main class="px-5 pt-16 sm:pt-20 md:pt-24  pb-6 md:px-10 xl:mx-auto max-w-8xl">
 
       <div class="hidden sm:flex justify-between items-center">
         <h1 class="text-2xl font-semibold" >Welcome to LANDR</h1>
