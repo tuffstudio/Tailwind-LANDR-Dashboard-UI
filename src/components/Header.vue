@@ -6,7 +6,7 @@
             <a href="#home">
               <svg class="h-8 w-8 md:h-10 md:w-10 fill-current text-gray-100 hover:text-gray-500" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"><g stroke="currentColor" stroke-width="1.5" fill="none" fill-rule="evenodd"><path d="M22.25 15a9.749 9.749 0 0 1-9.75 9.75A9.749 9.749 0 0 1 2.75 15a9.749 9.749 0 0 1 9.75-9.75A9.749 9.749 0 0 1 22.25 15z"></path><path d="M27.25 15a9.749 9.749 0 0 1-9.75 9.75A9.749 9.749 0 0 1 7.75 15a9.749 9.749 0 0 1 9.75-9.75A9.749 9.749 0 0 1 27.25 15z"></path></g></svg>
             </a>
-            <button type="button" class="absolute pl-8 w-full h-full md:hidden">
+            <button @click="menuOpen = !menuOpen" type="button" class="absolute pl-8 w-full h-full md:hidden">
               <svg class="h-5 w-5 fill-current text-gray-100" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path d="M14.25 6.507L9.003 11.75 3.75 6.5" stroke-width="1.5" stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>
             </button>
           </div>
@@ -26,8 +26,8 @@
           </nav>
         </div>
 
-        <div class="absolute top-0 left-0 md:left-auto md:right-0 w-screen sm:w-auto">
-          <div class="mx-6 mt-12 md:mt-16 bg-white rounded-sm sm:w-64 shadow-xl overflow-y-hidden">
+        <div v-if="menuOpen" class="absolute top-0 left-0 mt-12 md:mt-16 md:left-auto md:right-0 w-screen sm:w-auto">
+          <div class="mx-6  bg-white rounded-sm sm:w-64 shadow-xl overflow-y-hidden">
             <nav class="py-4 px-6 overflow-y-auto">
               <div class="flex justify-between items-center">
                 <span class="text-sm font-semibold">User Name</span>
@@ -82,7 +82,7 @@
               </div>
             </div>
           </div>
-          <button type="button" class="hidden md:block relative ml-6">
+          <button @click="menuOpen = !menuOpen" type="button" class="hidden md:block relative ml-6">
             <img class="w-10 h-10 rounded-full" src="@/assets/img/Profile.jpg" alt="Profile image">
           </button>
         </div>
@@ -101,6 +101,7 @@ export default {
     },
     data(){
         return{
+          menuOpen: false,
           notificationsOpen: false,
           notifications: [
             {
