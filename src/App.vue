@@ -57,9 +57,9 @@
         </div>
       <!-- samples post -->
         <div class="mt-4 lg:w-1/2 lg:pl-0 lg:pr-2 ">
-         <section class="card relative h-full rounded hover:shadow-lg">
-            <div class="p-6 relative z-10 sm:w-7/12">
-              <a href="#" class="inline-block">
+         <section class="card relative z-0 h-full rounded hover:shadow-lg">
+            <div class="p-6 relative sm:w-7/12">
+              <a href="#" class="inline-block relative z-10">
                 <h2 class="text-sm text-gray-500">LANDR Samples</h2>
                 <p class="mt-4 text-lg font-semibold">Stay inspired with free curated sample packs from top artists.</p>
               </a>

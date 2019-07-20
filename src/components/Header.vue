@@ -26,7 +26,7 @@
           </nav>
         </div>
 
-        <div class="absolute top-0 left-0 md:left-auto md:right-0 z-40 w-screen sm:w-auto">
+        <div class="absolute top-0 left-0 md:left-auto md:right-0 w-screen sm:w-auto">
           <div class="mx-6 mt-12 md:mt-16 bg-white rounded-sm sm:w-64 shadow-xl overflow-y-hidden">
             <nav class="py-4 px-6 overflow-y-auto">
               <div class="flex justify-between items-center">
@@ -64,11 +64,11 @@
         </div>
 
         <div class="flex items-center">
-          <div class="relative">
+          <div @click="notificationsOpen = !notificationsOpen" class="relative">
             <button type="button">
               <svg class="h-6 w-6 fill-current text-gray-100 hover:text-gray-500" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M14 5c-.294-1.162-1.081-2-2.006-2-.913 0-1.69.864-1.994 2" fill="currentColor"></path><path d="M9 17.25a3 3 0 0 0 6 0" stroke="currentColor" stroke-width="1.5"></path><path d="M17.25 13.248l.503 1c.827 0 1.497.666 1.497 1.5 0 .83-.68 1.502-1.497 1.502H6.247a1.495 1.495 0 0 1-1.497-1.501c0-.83.68-1.501 1.497-1.501l.503-1v-2.994c0-3.04 2.24-5.504 5.004-5.504h.492c2.764 0 5.004 2.471 5.004 5.504v2.994z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></g></svg>
             </button>
-            <div class=" absolute z-40 right-0">
+            <div v-if="notificationsOpen" class="absolute right-0">
               <div class="mt-4 bg-white rounded-sm w-96 shadow-xl overflow-y-hidden ">
                 <div class="p-4 flex justify-between items-center">
                   <span>Notifications</span>
@@ -101,32 +101,33 @@ export default {
     },
     data(){
         return{
-            notifications: [
-        {
-          notificationTitle: "Moon Rising-9e",
-          notificationDate: "Jul 6, 2019",
-        },
-        {
-          notificationTitle: "MR-Master FREE VSTs - no",
-          notificationDate: "Jul 6, 2019",
-        },
-        {
-          notificationTitle: "MR-Master-9c-NO_LIMIT",
-          notificationDate: "Jul 6, 2019",
-        },
-        {
-          notificationTitle: "Moon Rising-9e",
-          notificationDate: "Jul 6, 2019",
-        },
-        {
-          notificationTitle: "Moon Rising-9c",
-          notificationDate: "Jul 6, 2019",
-        },
-        {
-          notificationTitle: "Moon Rising-9b",
-          notificationDate: "Jul 6, 2019",
-        },
-      ],
+          notificationsOpen: false,
+          notifications: [
+            {
+              notificationTitle: "Moon Rising-9e",
+              notificationDate: "Jul 6, 2019",
+            },
+            {
+              notificationTitle: "MR-Master FREE VSTs - no",
+              notificationDate: "Jul 6, 2019",
+            },
+            {
+              notificationTitle: "MR-Master-9c-NO_LIMIT",
+              notificationDate: "Jul 6, 2019",
+            },
+            {
+              notificationTitle: "Moon Rising-9e",
+              notificationDate: "Jul 6, 2019",
+            },
+            {
+              notificationTitle: "Moon Rising-9c",
+              notificationDate: "Jul 6, 2019",
+            },
+            {
+              notificationTitle: "Moon Rising-9b",
+              notificationDate: "Jul 6, 2019",
+            },
+          ],
         }
     },
     
