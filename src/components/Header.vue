@@ -26,49 +26,66 @@
           </nav>
         </div>
 
-        <div v-if="menuOpen" class="absolute top-0 left-0 mt-12 md:mt-16 md:left-auto md:right-0 w-screen sm:w-auto">
-          <div class="mx-6  bg-white rounded-sm sm:w-64 shadow-xl overflow-y-hidden">
-            <nav class="py-4 px-6 overflow-y-auto">
-              <div class="flex justify-between items-center">
-                <span class="text-sm font-semibold">User Name</span>
-                <img class="w-10 h-10 rounded-full md:hidden" src="@/assets/img/Profile.jpg" alt="Profile image">
-              </div>
-              <div class="pb-2 border-b">
-                <p class="text-sm text-gray-600">
-                  Advanced<span class="mx-1">&middot;</span><a href="#" class="text-teal-500">Upgrade</a>
-                </p>
-              </div>
-              <div class="py-2 md:hidden border-b flex flex-col">
-                <a href="#" class="py-2 hover:text-teal-400">Home</a>
-                <a href="#" class="py-2 hover:text-teal-400">Library</a>
-                <a href="#" class="py-2 hover:text-teal-400">Releases</a>
-                <a href="#" class="py-2 hover:text-teal-400">Samples</a>
-              </div>
-              <div class="py-2 border-b flex flex-col">
-                <a href="#" class="py-2 hover:text-teal-400">Account settings</a>
-              </div>
-              <div class="py-2 border-b flex flex-col">
-                <a href="#" class="py-2 hover:text-teal-400">Desktop app</a>
-                <a href="#" class="py-2 hover:text-teal-400">Blog</a>
-                <a href="#" class="py-2 hover:text-teal-400">Pricing</a>
-                <a href="#" class="py-2 hover:text-teal-400">Help</a>
-                <a href="#" class="py-2 hover:text-teal-400">Give Feedback
-                  <span class="py-1 px-2 ml-2 bg-indigo-700 text-xs text-white uppercase rounded">new</span>
-                  </a>
-              </div>
-              <div class="py-2">
-                <button type="button" class="py-1 hover:text-teal-400">Log out</button>
-              </div>
-            </nav>
+        <transition
+          enter-active-class="transition-all transition-fastest ease-out-quad"
+          leave-active-class="transition-all transition-faster ease-in-quad"
+          enter-class="opacity-0 scale-70"
+          enter-to-class="opacity-100 scale-100"
+          leave-class="opacity-100 scale-100"
+          leave-to-class="opacity-0 scale-70"
+        >
+          <div v-if="menuOpen" class="origin-top-left md:origin-top-right absolute top-0 left-0 mt-12 md:mt-16 md:left-auto md:right-0 w-screen sm:w-auto">
+            <div class="mx-6  bg-white rounded-sm sm:w-64 shadow-xl overflow-y-hidden">
+              <nav class="py-4 px-6 overflow-y-auto">
+                <div class="flex justify-between items-center">
+                  <span class="text-sm font-semibold">User Name</span>
+                  <img class="w-10 h-10 rounded-full md:hidden" src="@/assets/img/Profile.jpg" alt="Profile image">
+                </div>
+                <div class="pb-2 border-b">
+                  <p class="text-sm text-gray-600">
+                    Advanced<span class="mx-1">&middot;</span><a href="#" class="text-teal-500">Upgrade</a>
+                  </p>
+                </div>
+                <div class="py-2 md:hidden border-b flex flex-col">
+                  <a href="#" class="py-2 hover:text-teal-400">Home</a>
+                  <a href="#" class="py-2 hover:text-teal-400">Library</a>
+                  <a href="#" class="py-2 hover:text-teal-400">Releases</a>
+                  <a href="#" class="py-2 hover:text-teal-400">Samples</a>
+                </div>
+                <div class="py-2 border-b flex flex-col">
+                  <a href="#" class="py-2 hover:text-teal-400">Account settings</a>
+                </div>
+                <div class="py-2 border-b flex flex-col">
+                  <a href="#" class="py-2 hover:text-teal-400">Desktop app</a>
+                  <a href="#" class="py-2 hover:text-teal-400">Blog</a>
+                  <a href="#" class="py-2 hover:text-teal-400">Pricing</a>
+                  <a href="#" class="py-2 hover:text-teal-400">Help</a>
+                  <a href="#" class="py-2 hover:text-teal-400">Give Feedback
+                    <span class="py-1 px-2 ml-2 bg-indigo-700 text-xs text-white uppercase rounded">new</span>
+                    </a>
+                </div>
+                <div class="py-2">
+                  <button type="button" class="py-1 hover:text-teal-400">Log out</button>
+                </div>
+              </nav>
+            </div>
           </div>
-        </div>
+        </transition>
 
         <div class="flex items-center">
           <div @click="notificationsOpen = !notificationsOpen" class="relative">
             <button type="button">
               <svg class="h-6 w-6 fill-current text-gray-100 hover:text-gray-500" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M14 5c-.294-1.162-1.081-2-2.006-2-.913 0-1.69.864-1.994 2" fill="currentColor"></path><path d="M9 17.25a3 3 0 0 0 6 0" stroke="currentColor" stroke-width="1.5"></path><path d="M17.25 13.248l.503 1c.827 0 1.497.666 1.497 1.5 0 .83-.68 1.502-1.497 1.502H6.247a1.495 1.495 0 0 1-1.497-1.501c0-.83.68-1.501 1.497-1.501l.503-1v-2.994c0-3.04 2.24-5.504 5.004-5.504h.492c2.764 0 5.004 2.471 5.004 5.504v2.994z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></g></svg>
             </button>
-            <div v-if="notificationsOpen" class="absolute right-0">
+            <transition
+              enter-active-class="transition-all transition-fastest ease-out-quad"
+              leave-active-class="transition-all transition-faster ease-in-quad"
+              enter-class="opacity-0 scale-70"
+              enter-to-class="opacity-100 scale-100"
+              leave-class="opacity-100 scale-100"
+              leave-to-class="opacity-0 scale-70"
+            >
+            <div v-if="notificationsOpen" class="origin-top-right absolute right-0">
               <div class="mt-4 bg-white rounded-sm w-96 shadow-xl overflow-y-hidden ">
                 <div class="p-4 flex justify-between items-center">
                   <span>Notifications</span>
@@ -81,6 +98,7 @@
                 </div>
               </div>
             </div>
+            </transition>
           </div>
           <button @click="menuOpen = !menuOpen" type="button" class="hidden md:block relative ml-6">
             <img class="w-10 h-10 rounded-full" src="@/assets/img/Profile.jpg" alt="Profile image">
@@ -134,4 +152,41 @@ export default {
     
 }
 </script>
+
+<style>
+.origin-top-right {
+  transform-origin: top right;
+}
+.origin-top-left {
+  transform-origin: top left;
+}
+.transition-all {
+  transition-property: all;
+}
+.transition-fastest {
+  transition-duration: 50ms;
+}
+.transition-faster {
+  transition-duration: 100ms;
+}
+.transition-fast {
+  transition-duration: 150ms;
+}
+.transition-medium {
+  transition-duration: 200ms;
+}
+.ease-out-quad {
+  transition-timing-function: cubic-bezier(.25, .46, .45, .94);
+}
+.ease-in-quad {
+  transition-timing-function: cubic-bezier(.55, .085, .68, .53);
+}
+.scale-70 {
+  transform: scale(.7);
+}
+.scale-100 {
+  transform: scale(1);
+}
+</style>
+
 
