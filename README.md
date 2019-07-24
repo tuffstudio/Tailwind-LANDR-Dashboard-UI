@@ -1,8 +1,10 @@
-# landr-dashboard-ui
+# LANDR Dashboard UI
 
 [Live Preview](https://xenodochial-elion-bc4329.netlify.com)
 
-## Project setup
+Test run of quickly re-creating existing UI using TailwindCSS.
+
+### Project setup
 ```
 yarn install
 ```
