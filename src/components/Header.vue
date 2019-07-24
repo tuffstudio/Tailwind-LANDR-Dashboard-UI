@@ -1,6 +1,6 @@
 <template>
 <header class="bg-deep-ocean fixed z-10 w-full">
-      <div class="px-6 relative flex justify-between max-w-7xl xl:mx-auto">
+      <div class="px-6 my-4 md:my-0 relative flex justify-between max-w-7xl xl:mx-auto">
         <div class="flex">
           <div class="relative flex items-center ">
             <a href="#home">
@@ -10,7 +10,7 @@
               <svg class="h-5 w-5 fill-current text-gray-100" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path d="M14.25 6.507L9.003 11.75 3.75 6.5" stroke-width="1.5" stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg>
             </button>
           </div>
-          <nav class="invisible md:visible flex w-full">
+          <nav class="hidden md:block flex w-full">
               <div class="ml-8 py-4 md:py-6 inline-block border-b-2 border-teal-400 w-auto">
                 <a href="#" class="text-gray-500 hover:text-gray-300 font-semibold">Home</a>
               </div>
@@ -91,7 +91,7 @@
                   <span>Notifications</span>
                   <button type="button">Mark all as seen</button>
                 </div>
-                <div class="overflow-y-auto h-64">
+                <div class="with_scrollbar overflow-y-auto h-64">
                   <div v-bind:key="notification.id" v-for="(notification, i) in notifications" :class="{'border-t' : i === 0 }" class="border-b">
                       <Notification :notification="notification"/>
                   </div>
@@ -188,22 +188,12 @@ export default {
   transform: scale(1);
 }
 
-::-webkit-scrollbar {
-    width: 5px;
-}
- 
-/* Track */
-::-webkit-scrollbar-track {
-    border-radius: 0;
-}
- 
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: black; 
-}
-::-webkit-scrollbar-thumb:window-inactive {
-	background: black; 
-}
+ .with_scrollbar::-webkit-scrollbar { width: 5px;}
+              /* Track */
+ .with_scrollbar::-webkit-scrollbar-track {border-radius: 0;}
+              /* Handle */
+ .with_scrollbar::-webkit-scrollbar-thumb {background: black; }
+ .with_scrollbar::-webkit-scrollbar-thumb:window-inactive {background: black; }
 
 </style>
 
