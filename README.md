@@ -1,6 +1,6 @@
 # LANDR Dashboard UI
 
-[Live Preview](https://xenodochial-elion-bc4329.netlify.com)
+[Live Preview](https://lucid-lovelace-750498.netlify.com/)
 
 Test run of quickly re-creating existing UI using TailwindCSS.
 
