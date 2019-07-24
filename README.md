@@ -1,5 +1,7 @@
 # landr-dashboard-ui
 
+[Live Preview](https://xenodochial-elion-bc4329.netlify.com)
+
 ## Project setup
 ```
 yarn install
