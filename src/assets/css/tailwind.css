@@ -1,5 +1,5 @@
 @tailwind base;
-@taiwind components;
+@tailwind components;
 
 .card a:hover p{
     text-decoration: underline;
