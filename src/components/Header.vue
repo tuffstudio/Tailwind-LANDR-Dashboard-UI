@@ -187,6 +187,24 @@ export default {
 .scale-100 {
   transform: scale(1);
 }
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    border-radius: 0;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: black; 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background: black; 
+}
+
 </style>
 
 
