@@ -1,6 +1,4 @@
 <template>
-    <section class="mt-4 p-6 bg-white rounded">
-
         <div class="md:flex md:items-center md:-mx-2">
           <div class="w-full md:w-1/2 md:px-2">
             <h2 class="text-2xl leading-tight font-semibold tracking-wide">Stay in the loop with the LANDR newsletter</h2>
@@ -18,8 +16,6 @@
             </form>   
           </div> 
         </div> 
-
-    </section>
 </template>
 
 <script>

@@ -5,10 +5,10 @@
 
     <main class="px-5 pt-16 sm:pt-20 md:pt-24  pb-6 md:px-10 xl:mx-auto max-w-8xl">
 
-      <div class="hidden sm:flex justify-between items-center">
+      <section class="hidden sm:flex justify-between items-center">
         <h1 class="text-2xl font-semibold" >Welcome to LANDR</h1>
         <a href="#" class="px-6 py-3 inline-block bg-yellow-500 text-xs leading-none font-semibold text-white rounded-sm">See Plans</a>
-      </div>
+      </section>
 <!-- banner -->
       <section class="mt-4 md:mt-8 flex shrink-0">
         <div class="relative p-5 md:px-12 md:py-24 w-full">
@@ -21,14 +21,14 @@
         </div>
       </section>
 <!-- stats -->
-      <div class="block lg:flex">
-	      <section class="block sm:flex sm:flex-wrap sm:-mx-2 lg:w-1/2">
-	        <div v-bind:key="stat.id" v-for="stat in stats" class="card mt-4 text-center sm:w-1/2 sm:px-2">
+      <section class="block lg:flex">
+	      <div class="block sm:flex sm:flex-wrap sm:-mx-2 lg:w-1/2">
+	        <figure v-bind:key="stat.id" v-for="stat in stats" class="card mt-4 text-center sm:w-1/2 sm:px-2">
 	          <UserStats :stat="stat"/>
-	        </div>
-	      </section>
+	        </figure>
+	      </div>
 	<!-- tracks -->
-	      <section class="mt-4 bg-white rounded lg:w-1/2 lg:ml-4">
+	      <article class="mt-4 bg-white rounded lg:w-1/2 lg:ml-4">
 	        <div class="p-6 inline-block w-full">
 	          <h2 class="text-sm text-gray-500">Recent work</h2>
 	            <div class="mt-8">
@@ -38,14 +38,14 @@
 	            </div>
 	            <a href="#" class="mt-1 inline-block text-xs float-right font-semibold">See all files</a>
 	        </div>
-	      </section>
-      </div>
+	      </article>
+      </section>
 
 <!-- selecetd posts -->
-      <section class="lg:flex lg:-mx-2">
+      <aside class="lg:flex lg:-mx-2">
       <!-- blog post-->
         <div class="mt-4 lg:w-1/2 lg:pl-2 lg:pr-4 ">
-          <section class="card h-full bg-white rounded hover:shadow-lg">
+          <article class="card h-full bg-white rounded hover:shadow-lg">
             <a href="#" class="p-6 inline-block md:flex justify-between">
               <div>
                 <h2 class="text-sm text-gray-500">The LANDR Blog</h2>
@@ -53,11 +53,11 @@
               </div>
               <img class="hidden md:block h-24 w-32 p-2" src="./assets/img/ill-empty_state-blog.svg" alt="">
             </a>
-          </section>
+          </article>
         </div>
       <!-- samples post -->
         <div class="mt-4 lg:w-1/2 lg:pl-0 lg:pr-2 ">
-         <section class="card relative z-0 h-full rounded hover:shadow-lg">
+         <article class="card relative z-0 h-full rounded hover:shadow-lg">
             <div class="p-6 relative sm:w-7/12">
               <a href="#" class="inline-block relative z-10">
                 <h2 class="text-sm text-gray-500">LANDR Samples</h2>
@@ -65,11 +65,13 @@
               </a>
             </div>
             <img class="absolute inset-0 w-full h-full object-cover rounded" src="./assets/img/samples-background@2x.jpg" alt="Hand playing synth">
-          </section>
+          </article>
         </div>
-      </section>
+      </aside>
    
-      <NewsletterSubscribe/>
+      <aside class="mt-4 p-6 bg-white rounded">
+        <NewsletterSubscribe/>
+      </aside>
 
     </main>
     
