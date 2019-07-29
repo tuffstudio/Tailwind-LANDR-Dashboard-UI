@@ -73,7 +73,7 @@
         </transition>
 
         <div class="flex items-center">
-          <div @click="notificationsOpen = !notificationsOpen" class="relative">
+          <div @click="toggle" class="relative">
             <button type="button" class="focus:outline-none">
               <svg class="h-6 w-6 fill-current text-gray-100 hover:text-gray-500" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M14 5c-.294-1.162-1.081-2-2.006-2-.913 0-1.69.864-1.994 2" fill="currentColor"></path><path d="M9 17.25a3 3 0 0 0 6 0" stroke="currentColor" stroke-width="1.5"></path><path d="M17.25 13.248l.503 1c.827 0 1.497.666 1.497 1.5 0 .83-.68 1.502-1.497 1.502H6.247a1.495 1.495 0 0 1-1.497-1.501c0-.83.68-1.501 1.497-1.501l.503-1v-2.994c0-3.04 2.24-5.504 5.004-5.504h.492c2.764 0 5.004 2.471 5.004 5.504v2.994z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></g></svg>
             </button>
@@ -157,6 +157,11 @@ export default {
           ],
         }
     },
+    methods: {
+    toggle() {
+      this.notificationsOpen = !this.notificationsOpen
+    },
+  },
     
 }
 </script>
