@@ -4,7 +4,7 @@
             <svg width="36" height="36" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg"><g stroke="currentColor" stroke-width="1.5" fill="none" fill-rule="evenodd"><path d="M26.75 18c0 6.628-5.372 12-12 12s-12-5.372-12-12 5.372-12 12-12 12 5.372 12 12z"></path><path d="M33.25 18c0 6.628-5.372 12-12 12s-12-5.372-12-12 5.372-12 12-12 12 5.372 12 12z"></path></g></svg>
         </div>
         <div class="w-full text-left leading-tight">
-            <h3 class="font-semibold">{{ notification.notificationTitle }}</h3>
+            <h3 class="text-sm" v-html="notification.notificationTitle"></h3>
             <span class="text-sm text-gray-500">{{ notification.notificationDate }} </span>
         </div>
         <div>

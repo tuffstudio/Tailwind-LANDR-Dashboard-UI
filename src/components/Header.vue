@@ -91,7 +91,7 @@
                   <span>Notifications</span>
                   <button type="button">Mark all as seen</button>
                 </div>
-                <div class="with_scrollbar overflow-y-auto h-64">
+                <div class="with_scrollbar overflow-y-auto h-96">
                   <div v-bind:key="notification.id" v-for="(notification, i) in notifications" :class="{'border-t' : i === 0 }" class="border-b">
                       <Notification :notification="notification"/>
                   </div>
@@ -123,20 +123,20 @@ export default {
           notificationsOpen: false,
           notifications: [
             {
-              notificationTitle: "Moon Rising-9e",
+              notificationTitle: "<strong>High Rise Low Down (Felix Jackson Remix)</strong> just got it\'s first play! <a href=\"#\">See your stats</a>.",
+              notificationDate: "Jul 18, 2019",
+            },
+            {
+              notificationTitle: "<strong>Your track Moon Rising</strong> is mastered and ready. <a href=\"#\">Listen now</a>.",
               notificationDate: "Jul 6, 2019",
             },
             {
-              notificationTitle: "MR-Master FREE VSTs - no",
-              notificationDate: "Jul 6, 2019",
+              notificationTitle: "<strong>Your track Rizke - Internationales</strong> is mastered and ready. <a href=\"#\">Listen now</a>.",
+              notificationDate: "Jul 5, 2019",
             },
             {
-              notificationTitle: "MR-Master-9c-NO_LIMIT",
-              notificationDate: "Jul 6, 2019",
-            },
-            {
-              notificationTitle: "Moon Rising-9e",
-              notificationDate: "Jul 6, 2019",
+              notificationTitle: "<strong>Your track Moon Rising-9e</strong> is mastered and ready. <a href=\"#\">Listen now</a>.",
+              notificationDate: "Jul 5, 2019",
             },
             {
               notificationTitle: "Moon Rising-9c",

@@ -14,6 +14,13 @@ const purgecss = require('@fullhuman/postcss-purgecss')({
 })
 
 module.exports = {
+    theme: {
+        extend: {
+            height: {
+                '96': '24rem',
+            }
+        }
+    },
     plugins: [
         require('tailwindcss'),
         require('autoprefixer'),
