@@ -7,7 +7,10 @@
 
       <section class="hidden sm:flex justify-between items-center">
         <h1 class="text-2xl font-semibold" >Welcome to LANDR</h1>
-        <a href="#" class="px-6 py-3 inline-block bg-yellow-500 text-xs leading-none font-semibold text-white rounded-sm">See Plans</a>
+        <div class="flex items-center">
+          <p class="text-xs text-gray-600">Your plan gives you unlimited Hi-Res MP3</p>
+          <a href="#" class="px-6 py-3 ml-4 inline-block bg-yellow-500 text-xs leading-none font-semibold text-white rounded-sm">See Plans</a>
+        </div>
       </section>
 <!-- banner -->
       <section class="mt-4 md:mt-8 flex shrink-0">
