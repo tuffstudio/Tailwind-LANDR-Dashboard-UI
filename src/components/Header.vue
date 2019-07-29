@@ -88,8 +88,8 @@
             <div v-if="notificationsOpen" class="origin-top-right absolute right-0">
               <div class="mt-4 bg-white rounded-sm w-96 shadow-xl overflow-y-hidden ">
                 <div class="p-4 flex justify-between items-center">
-                  <span>Notifications</span>
-                  <button type="button">Mark all as seen</button>
+                  <span class="font-semibold">Notifications</span>
+                  <button class="font-semibold" type="button">Mark all as seen</button>
                 </div>
                 <div class="with_scrollbar overflow-y-auto h-96">
                   <div v-bind:key="notification.id" v-for="(notification, i) in notifications" :class="{'border-t' : i === 0 }" class="border-b">
@@ -123,19 +123,27 @@ export default {
           notificationsOpen: false,
           notifications: [
             {
-              notificationTitle: "<strong>High Rise Low Down (Felix Jackson Remix)</strong> just got it\'s first play! <a href=\"#\">See your stats</a>.",
+              notificationTitle: "High Rise Low Down (Felix Jackson Remix)",
+              notificationText: "just got it\'s first play!",
+              notificationLink: "See your stats",
               notificationDate: "Jul 18, 2019",
             },
             {
-              notificationTitle: "<strong>Your track Moon Rising</strong> is mastered and ready. <a href=\"#\">Listen now</a>.",
+              notificationTitle: "Your track Moon Rising",
+              notificationText: "is mastered and ready.",
+              notificationLink: "Listen now",
               notificationDate: "Jul 6, 2019",
             },
             {
-              notificationTitle: "<strong>Your track Rizke - Internationales</strong> is mastered and ready. <a href=\"#\">Listen now</a>.",
+              notificationTitle: "Your track Rizke - Internationales",
+              notificationText: "is mastered and ready.",
+              notificationLink: "Listen now",
               notificationDate: "Jul 5, 2019",
             },
             {
-              notificationTitle: "<strong>Your track Moon Rising-9e</strong> is mastered and ready. <a href=\"#\">Listen now</a>.",
+              notificationTitle: "Your track Moon Rising-9e",
+              notificationText: "is mastered and ready.",
+              notificationLink: "Listen now",
               notificationDate: "Jul 5, 2019",
             },
             {
