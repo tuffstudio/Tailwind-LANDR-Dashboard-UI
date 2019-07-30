@@ -36,7 +36,7 @@
         >
           <div v-if="menuOpen" class="origin-top-left md:origin-top-right absolute top-0 left-0 mt-10 md:mt-16 md:left-auto md:right-0 w-screen sm:w-auto">
             <div class="mx-6  bg-white rounded-sm sm:w-64 shadow-xl overflow-y-hidden">
-              <nav class="py-4 px-6 overflow-y-auto">
+              <nav class="py-4 px-6 overflow-y-auto h-102 sm:h-auto">
                 <div class="flex justify-between items-center">
                   <span class="text-sm font-semibold">User Name</span>
                   <img class="w-10 h-10 rounded-full md:hidden" src="@/assets/img/Profile.jpg" alt="Profile image">
