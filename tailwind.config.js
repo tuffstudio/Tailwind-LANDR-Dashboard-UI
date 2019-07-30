@@ -4,6 +4,7 @@ module.exports = {
       colors: {
         'navy': '#0F1B2A',
         'deep-ocean': '#04303e',
+        'sand': '#EDEDEB',
       },
       spacing: {
         '72': '18rem',
