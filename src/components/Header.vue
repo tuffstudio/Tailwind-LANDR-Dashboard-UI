@@ -34,7 +34,7 @@
           leave-class="opacity-100 scale-100"
           leave-to-class="opacity-0 scale-70"
         >
-          <div v-if="menuOpen" class="origin-top-left md:origin-top-right absolute top-0 left-0 mt-12 md:mt-16 md:left-auto md:right-0 w-screen sm:w-auto">
+          <div v-if="menuOpen" class="origin-top-left md:origin-top-right absolute top-0 left-0 mt-10 md:mt-16 md:left-auto md:right-0 w-screen sm:w-auto">
             <div class="mx-6  bg-white rounded-sm sm:w-64 shadow-xl overflow-y-hidden">
               <nav class="py-4 px-6 overflow-y-auto">
                 <div class="flex justify-between items-center">
@@ -85,8 +85,8 @@
               leave-class="opacity-100 scale-100"
               leave-to-class="opacity-0 scale-70"
             >
-            <div v-if="notificationsOpen" class="origin-top-right absolute right-0">
-              <div class="mt-4 bg-white rounded-sm w-96 shadow-xl overflow-y-hidden ">
+            <div v-if="notificationsOpen" class="origin-top-right absolute top-0 right-0 -mr-6 md:mr-0 mt-6 w-screen sm:w-auto">
+              <div class="mt-4 bg-white rounded-sm md:w-96 shadow-xl overflow-y-hidden ">
                 <div class="p-4 flex justify-between items-center">
                   <span class="font-semibold">Notifications</span>
                   <button class="font-semibold" type="button">Mark all as seen</button>
