@@ -14,8 +14,8 @@
       </section>
 <!-- banner -->
       <section class="mt-4 md:mt-8 flex shrink-0">
-        <div class="relative p-5 md:px-12 md:py-24 w-full">
-          <img class="absolute inset-0 h-full w-full rounded object-cover" src="./assets/img/banner-collab.jpg" alt="Guy in the music studio">
+        <div class="relative p-5 md:px-12 md:py-24 w-full rounded overflow-hidden">
+          <img class="absolute inset-0 h-full w-full object-cover" src="./assets/img/banner-collab.jpg" alt="Guy in the music studio">
           <div class="p-4 md:p-6 w-9/12 max-w-lg relative">
             <h2 class="text-3xl md:text-5xl leading-tight md:leading-none text-white font-semibold tracking-wide">Share tracks & ask for opinions.</h2>
             <p class="mt-3 text-white">Take notes for yourself, or ask for feedback after you've mastered.</p>
@@ -60,14 +60,14 @@
         </div>
       <!-- samples post -->
         <div class="mt-4 lg:w-1/2 lg:pl-0 lg:pr-2 ">
-         <article class="card relative z-0 h-full rounded hover:shadow-lg bg-sand">
+         <article class="card relative z-0 h-full rounded overflow-hidden hover:shadow-lg bg-sand">
             <div class="p-6 relative sm:w-7/12">
               <a href="#" class="inline-block relative z-10">
                 <h2 class="text-sm text-gray-500">LANDR Samples</h2>
                 <p class="mt-4 text-lg font-semibold">Stay inspired with free curated sample packs from top artists.</p>
               </a>
             </div>
-              <img class="invisible sm:visible absolute inset-0 w-full h-full object-cover rounded" src="./assets/img/samples-background@2x.jpg" alt="Hand playing synth">
+              <img class="invisible sm:visible absolute inset-0 w-full h-full object-cover" src="./assets/img/samples-background@2x.jpg" alt="Hand playing synth">
           </article>
         </div>
       </aside>
